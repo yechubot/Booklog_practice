@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="BookLog"
+        android:textSize="30sp" />
+
+    <CalendarView
+        android:id="@+id/logDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switcher"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logDate"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn"
+        android:text="Log"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dateShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="(clicked)date will be displayed here "
+        android:textColor="#434343"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="book calender"
+        android:checked="true"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        />
+
+    <Button
+        android:id="@+id/bookshelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn"
+        android:padding="10dp"
+        android:text="my bookshelf"
+        android:textSize="20sp" />
+
+</RelativeLayout>
