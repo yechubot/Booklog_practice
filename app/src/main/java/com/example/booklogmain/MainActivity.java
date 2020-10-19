@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         logDate.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                myDate = year;
+                myYear = year;
                 myMonth = month+1;// start from 0
                 myDate = dayOfMonth;
 
